@@ -11,13 +11,13 @@
     rdf:type                      owl:Ontology ;
     dcterms:creator               "Kenneth Vaughn"@en ;
     dcterms:license               <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified              "2026-07-14T22:02:06Z"^^xsd:dateTime ;
+    dcterms:modified              "2026-07-30"^^xsd:date ;
     dcterms:title                 "ITS Ontology - Transport User Topic Area"@en ;
     its-core:draft                true ;
     owl:imports                   :CorePattern ;
     owl:imports                   :TransportUserPattern ;
-    owl:versionIRI                :v0.0.0-alpha.1 ;
-    owl:versionInfo               "0.0.0-alpha.1" ;
+    owl:versionIRI                <https://w3id.org/itsdata/t-user/v1/0.0.1-alpha.1> ;
+    owl:versionInfo               "0.0.1-alpha.1" ;
     skos:definition               "This ontology imports the Transport User topic area modules."@en ;
     vann:preferredNamespacePrefix "its-t-user" ;
     vann:preferredNamespaceUri    "https://w3id.org/itsdata/t-user/v1/" .
