@@ -1,0 +1,23 @@
+INHERIT: mkdocs.common.yml
+site_name: ITS Ontology - Traffic Regulations
+site_description: A registry for documenting the ontology of traffic regulation concepts
+repo_url: https://github.com/ISO-TC204/ontology-its-t-user-v1
+site_url: https://isotc204.org/ontology-its-t-user-v1
+nav:
+- TC204 on ISO.org: https://www.iso.org/committee/54706.html
+- TC 204 Home: https://isotc204.org/
+- RITSO Home: https://isotc204.org/ritso/
+- ITS Ontology - Traffic Regulations:
+  - Home: index.md
+  - Core Pattern:
+    - Core Pattern Overview: classes/CorePattern.md
+    - Classes:
+      - Transport User Thing: classes/TransportUserThing.md
+    - Properties:
+      - TransportUserDataProperty: properties/TransportUserDataProperty.md
+      - TransportUserObjectProperty: properties/TransportUserObjectProperty.md
+  - Transport User Pattern:
+    - Transport User Pattern Overview: classes/TransportUserPattern.md
+    - Classes:
+      - Transport Usage Type Code: classes/TransportUsageTypeCode.md
+      - Transport User Type Code: classes/TransportUserTypeCode.md

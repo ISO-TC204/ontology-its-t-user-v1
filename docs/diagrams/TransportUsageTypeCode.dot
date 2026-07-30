@@ -1,0 +1,21 @@
+// Diagram for TransportUsageTypeCode
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		"its-core_Code" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">its-core:Code</TD></TR></TABLE>> URL="https://w3id.org/itsdata/core/v1/Code" margin=0]
+		TransportUserThing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TransportUserThing</TD></TR></TABLE>> URL="../TransportUserThing" margin=0]
+	}
+	TransportUsageTypeCode [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TransportUsageTypeCode</TD></TR></TABLE>> URL="../TransportUsageTypeCode" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	TransportUsageTypeCode -> "its-core_Code" [arrowhead=onormal style=solid]
+	TransportUsageTypeCode -> TransportUserThing [arrowhead=onormal style=solid]
+}

@@ -1,0 +1,20 @@
+BASE <https://w3id.org/itsdata/t-user/v1/>
+PREFIX : <https://w3id.org/itsdata/t-user/v1/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX cdm1: <https://w3id.org/citydata/part1/v1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cdm2: <https://w3id.org/citydata/part2/v1/>
+PREFIX its-core: <https://w3id.org/itsdata/core/v1/>
+PREFIX its-time: <https://w3id.org/itsdata/time/v1/>
+PREFIX its-location: <https://w3id.org/itsdata/location/v1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+:TransportUserSHACL a owl:Ontology ;
+    dcterms:title "SHACL constraints for the Transport User pattern"@en ;
+    skos:definition "Validation shapes for transport user concepts."@en ;
+    owl:imports :TransportUserPattern .
+

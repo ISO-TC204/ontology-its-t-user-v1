@@ -1,0 +1,57 @@
+@prefix : <https://w3id.org/itsdata/t-user/v1/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cdm1: <https://w3id.org/citydata/part1/v1/> .
+@prefix cdm2: <https://w3id.org/citydata/part2/v1/> .
+@prefix its-core: <https://w3id.org/itsdata/core/v1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+:TransportUserPattern
+    rdf:type                      owl:Ontology ;
+    dcterms:creator               "Kenneth Vaughn" ;
+    dcterms:license               <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified              "2026-07-22T22:02:06Z"^^xsd:dateTime ;
+    dcterms:title                 "Transport User Pattern"@en ;
+    its-core:draft                true ;
+    owl:imports                   cdm1: ;
+    owl:imports                   its-core: ;
+    skos:definition               "This ontology defines patterns for transport user."@en .
+
+# ================================================
+#                 Code classes
+# ================================================
+
+:TransportUserTypeCode
+    rdf:type        owl:Class ;
+    rdfs:subClassOf :TransportUserThing ;
+    rdfs:subClassOf its-core:Code ;
+    skos:definition "A code that indicates the type of transport user."@en ;
+    skos:example "passenger, pedestrian, cyclist, vehicle, sheep, etc."@en .
+
+:TransportUsageTypeCode
+    rdf:type        owl:Class ;
+    rdfs:subClassOf :TransportUserThing ;
+    rdfs:subClassOf its-core:Code ;
+    skos:definition "A code that indicates the type of transport usage."@en ;
+    skos:example "HOV2, hired taxi, etc."@en .
+
+# ================================================
+#         Transport User Classes
+# ================================================
+
+
+# ================================================
+#                 Object properties
+# ================================================
+
+
+# ================================================
+#                 Datatype properties
+# ================================================
+
