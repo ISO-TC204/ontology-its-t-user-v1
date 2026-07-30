@@ -1,0 +1,6 @@
+id,qname,heading,text,type,diagram,website,updated
+,TransportUserThing,TransportUserThing,Parent class for transport user domain concepts.,Class,https://w3id.org/itsdata/t-user/v1/diagrams/TransportUserThing.dot.svg,https://w3id.org/itsdata/t-user/v1/TransportUserThing,2026-07-30T16:18:32.796151
+,TransportUserTypeCode,TransportUserTypeCode,A code that indicates the type of transport user.,Class,https://w3id.org/itsdata/t-user/v1/diagrams/TransportUserTypeCode.dot.svg,https://w3id.org/itsdata/t-user/v1/TransportUserTypeCode,2026-07-30T16:18:32.796151
+,TransportUsageTypeCode,TransportUsageTypeCode,A code that indicates the type of transport usage.,Class,https://w3id.org/itsdata/t-user/v1/diagrams/TransportUsageTypeCode.dot.svg,https://w3id.org/itsdata/t-user/v1/TransportUsageTypeCode,2026-07-30T16:18:32.796151
+,TransportUserObjectProperty,TransportUserObjectProperty,Organizational super-property for transport user core object properties.,ObjectProperty,,https://w3id.org/itsdata/t-user/v1/TransportUserObjectProperty,2026-07-30T16:18:32.796151
+,TransportUserDataProperty,TransportUserDataProperty,Organizational super-property for transport user core data properties.,DatatypeProperty,,https://w3id.org/itsdata/t-user/v1/TransportUserDataProperty,2026-07-30T16:18:32.796151

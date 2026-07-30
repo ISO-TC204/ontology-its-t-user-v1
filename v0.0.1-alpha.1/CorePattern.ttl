@@ -1,0 +1,47 @@
+BASE <https://w3id.org/itsdata/t-user/v1/>
+PREFIX : <https://w3id.org/itsdata/t-user/v1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cdm1: <https://w3id.org/citydata/part1/v1/>
+PREFIX its-core: <https://w3id.org/itsdata/core/v1/>
+
+:CorePattern
+    rdf:type           owl:Ontology ;
+    dcterms:title      "Transport User Core Pattern"@en ;
+    skos:definition    "This ontology defines patterns for core concepts within the Transport User Topic Area."@en ;
+    dcterms:creator    "Kenneth Vaughn" ;
+    dcterms:license    <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified   "2026-07-22T22:02:06Z"^^xsd:dateTime ;
+    its-core:draft     true ;
+    owl:versionInfo    "0.0.0-alpha.1" ;
+    owl:versionIRI     :r0.0-alpha.1 ;
+    owl:imports        cdm1: ;
+    owl:imports        its-core: .
+
+#################################################################
+# Core classes
+#################################################################
+
+:TransportUserThing
+    a owl:Class ;
+    skos:definition "Parent class for transport user domain concepts."@en .
+
+#################################################################
+# Core properties
+#################################################################
+
+:TransportUserObjectProperty
+    a owl:ObjectProperty ;
+    skos:definition "Organizational super-property for transport user core object properties."@en .
+
+:TransportUserDataProperty
+    a owl:DatatypeProperty ;
+    skos:definition "Organizational super-property for transport user core data properties."@en .
+
